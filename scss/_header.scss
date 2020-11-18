@@ -1,7 +1,7 @@
 .header {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: 60vw 40vw;
     grid-template-rows: repeat(5, 1fr);
     height: 100vh;
     overflow: hidden;
@@ -14,7 +14,7 @@
 
     &__photo {
         position: relative;
-        grid-column: 6/-1;
+        grid-column: 2/-1;
         grid-row: 1/-1;
 
         @include media-tablet {
@@ -41,7 +41,7 @@
 
     &__heading-box {
         margin-left: 8em;
-        grid-column: 1/6;
+        grid-column: 1/2;
         grid-row: 3/4;
 
         @include media-tablet {
