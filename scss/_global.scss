@@ -14,4 +14,21 @@ html {
 body {
     font-family: 'Cormorant', serif;
     font-size: 1.6rem;
+    color: $colorBlack;
 }
+
+h1 {
+    font-size: 4.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button {
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: 1px solid $colorBlack;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
