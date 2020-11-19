@@ -1,7 +1,12 @@
 .nav {
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 100;
     width: 100%;
+
+    &__shadow {
+        background-color: $colorWhite;
+    }
 
     &__box {
         display: flex;
