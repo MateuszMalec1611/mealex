@@ -9,23 +9,31 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,700;1,400&family=Montserrat:ital,wght@1,700&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/11acd130e3.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
     <nav class="nav">
+        
+        <a href="#" class="nav__logo">mealex.</a>
+        <button class="burger-btn">
+            <img class="burger-btn__open burger-btn__open--close" src="img/incons/menu.svg" alt="">
+            <img class="burger-btn__close burger-btn__close--open" src="img/incons/close-menu.svg" alt="">
+        </button>
+        
         <div class="nav__box">
-           <a href="#" class="nav__logo">mealex.</a>
             <ul class="nav__links">
-                <li class="nav__links-item"><a href="#">home</a></li>
-                <li class="nav__links-item"><a href="#">about</a></li>
-                <li class="nav__links-item"><a href="#">service</a></li>
-                <li class="nav__links-item"><a href="#">portfolio</a></li>
-                <li class="nav__links-item"><a href="#">contact</a></li>
+                <li class="nav__links-item"><a class="nav__links-style" href="#">home</a></li>
+                <li class="nav__links-item"><a class="nav__links-style" href="#">about</a></li>
+                <li class="nav__links-item"><a class="nav__links-style" href="#">service</a></li>
+                <li class="nav__links-item"><a class="nav__links-style" href="#">portfolio</a></li>
+                <li class="nav__links-item"><a class="nav__links-style" href="#">contact</a></li>
             </ul>
         </div>
     </nav>
+
 
 
     <header class="header">
@@ -43,7 +51,7 @@
         </div>
     </header>
 
-    
+
     <div style="height: 200vh;"></div>
     <script src="js/main.js"></script>
 </body>
