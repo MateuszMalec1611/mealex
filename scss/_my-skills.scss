@@ -1,0 +1,60 @@
+.my-skills {
+
+    &__indicator {
+        position: relative;
+        width: 23em;
+        height: 1em;
+        background-color: #dfdfdf;
+
+        &-one {
+            &::before {
+                @include indicator;
+                width: 90%;
+            }
+        }
+        &-two {
+            &::before {
+                @include indicator;
+                width: 70%;
+            }
+        }
+        &-three {
+            &::before {
+                @include indicator;
+                width: 80%;
+            }
+        }
+        &-four {
+            &::before {
+                @include indicator;
+                width: 60%;
+            }
+        }
+        &-five {
+            &::before {
+                @include indicator;
+                width: 95%;
+            }
+        }
+        &-six {
+            &::before {
+                @include indicator;
+                width: 93%;
+            }
+        }
+
+
+    }
+
+
+    &__box {
+        position: relative;
+
+        &-text {
+            color: $colorExtraBlack;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+    }
+}

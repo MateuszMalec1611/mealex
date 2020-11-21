@@ -9,5 +9,14 @@
 @mixin center-column-items {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+}
+
+@mixin indicator {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    background-color: $colorBlack;
+
 }
