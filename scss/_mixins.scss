@@ -1,0 +1,13 @@
+@mixin header-underline-styles {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    background-color: $colorWhite;
+}
+
+@mixin center-column-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}

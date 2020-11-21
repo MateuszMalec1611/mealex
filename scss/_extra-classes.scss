@@ -1,0 +1,46 @@
+.section-header {
+    @include center-column-items;
+    margin-top: 7em;
+    margin-bottom: 3em;
+
+
+    &__title {
+        position: relative;
+    }
+
+    &__underline-one {
+        position: relative;
+        bottom: -.4em;
+        width: 3.7em;
+        height: .1em;
+        background-color: $colorBlack;
+
+        &::after {
+            @include header-underline-styles;
+            left: 45%;
+            width: .1em;
+
+        }
+
+        &::before {
+            @include header-underline-styles;
+            left: 55%;
+            width: .1em;
+        }
+
+    }
+
+    &__underline-two {
+        position: relative;
+        bottom: -.6em;
+        width: 2.2em;
+        height: .1em;
+        background-color: $colorBlack;
+
+        &::after {
+            @include header-underline-styles;
+            left: 80%;
+            width: .15em;
+        }
+    }
+}
