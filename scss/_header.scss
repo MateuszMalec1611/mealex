@@ -93,6 +93,7 @@
         height: 491px;
         border: 17px solid #e1e1e1;
         z-index: -1;
+        animation: rotateLeft 280s infinite;
 
         @include media-mobile {
             top: 5%;
@@ -110,6 +111,7 @@
         height: 400px;
         border: 17px solid $colorWhite;
         z-index: 2;
+        animation: rotateRight 200s infinite;
 
         @include media-small-desktop {
             z-index: -1;
