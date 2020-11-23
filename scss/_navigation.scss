@@ -5,16 +5,12 @@
     align-items: center;
     width: 100%;
     z-index: 100;
-
-    &__shadow {
-        background-color: $colorWhite;
-    }
-
-   
+    background-color: transparent;
+    transition: background-color .3s .1s;
 
     &__box {
         margin: 3em 5em;
-        transition: margin .2s;
+        transition: margin .3s;
 
         @include media-regular-desktop {
             margin: 3em 0;
@@ -44,6 +40,10 @@
         @include media-regular-desktop {
             margin: 1.2em 0;
         }
+    }
+
+    &__shadow {
+        background-color: $colorWhite;
     }
 
     &__logo {
