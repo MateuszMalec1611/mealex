@@ -20,13 +20,8 @@
                 border: 17px solid $colorWhite;
                 z-index: 1;
                 animation: rotateLeft 100s infinite;
-        
-                @include media-mobile {
-                    width: 200px;
-                    height: 200px;
-                    left: -5%;
-                }
             }
+            
             &::after {
                 position: absolute;
                 content: '';
@@ -36,15 +31,7 @@
                 height: 300px;
                 border: 17px solid $colorWhite;
                 z-index: 1;
-                animation: rotateRight 200s infinite;
-        
-                @include media-mobile {
-                    width: 200px;
-                    height: 200px;
-                    right: -5%;
-                    top: 35%;
-                    animation: rotateRight 80s infinite;
-                }
+                animation: rotateRight 200s infinite;           
             }
 
 
@@ -70,8 +57,11 @@
                 position: absolute;
                 top: 0;
                 width: 100%;
-                height: 56%;
+                height: 86%;
                 background-color: #e1e1e1;
+            }
+            @include media-mobile {
+                display: none;
             }
         }
     }
@@ -86,6 +76,10 @@
         background-color: $colorWhite;
         box-shadow: 0 0 40px 9px rgba(0, 0, 0, 0.15);
         z-index: 10;
+
+        @include media-mobile {
+            margin-top: 0em;
+        }
 
         &-cards {
             margin-bottom: 7.2em;
