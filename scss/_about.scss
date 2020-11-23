@@ -1,0 +1,21 @@
+.about {
+    @include center-column-items;
+
+    &__text {
+        position: relative;
+        margin-bottom: 1.8em;
+        width: 38em;
+        text-align: center;
+
+        @include media-mobile {
+            padding: 0 1em;
+            max-width: 100%;
+        }
+    }
+
+    &__button {
+        padding: 1em 1.8em;
+        background-color: $colorBlack;
+        color: $colorWhite;
+    }
+}
