@@ -1,0 +1,86 @@
+.my-skills {
+
+    &__indicator {
+        position: relative;
+        width: 100%;
+        max-width: 23em;
+        height: 1em;
+        background-color: #dfdfdf;
+        @include media-tablet {
+            max-width: 100%;
+        }
+
+
+        &-one {
+            &::before {
+                @include indicator;
+                width: 90%;
+            }
+        }
+
+        &-two {
+            &::before {
+                @include indicator;
+                width: 70%;
+            }
+        }
+
+        &-three {
+            &::before {
+                @include indicator;
+                width: 80%;
+            }
+        }
+
+        &-four {
+            &::before {
+                @include indicator;
+                width: 60%;
+            }
+        }
+
+        &-five {
+            &::before {
+                @include indicator;
+                width: 95%;
+            }
+        }
+
+        &-six {
+            &::before {
+                @include indicator;
+                width: 92%;
+            }
+        }
+
+
+    }
+
+
+    &__box {
+        position: relative;
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2.6em 1.8em;
+
+        @include media-tablet {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @include media-mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+
+        }
+
+        &-text {
+            color: $colorExtraBlack;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+    }
+}
