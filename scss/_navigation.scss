@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     z-index: 100;
-    transition: background-color .3s .1s;
+    transition: background-color .3s .1s, border .3s .1s;
 
     &__box {
         margin: 3em 5em;
@@ -43,6 +43,7 @@
 
     &__shadow {
         background-color: $colorWhite;
+        border-bottom: 1px solid  $colorGrey;
     }
 
     &__logo {
