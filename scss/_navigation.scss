@@ -7,12 +7,14 @@
     z-index: 100;
 
     &__shadow {
-        height: 3.8em;
         background-color: $colorWhite;
     }
 
+   
+
     &__box {
         margin: 3em 5em;
+        transition: margin .2s;
 
         @include media-regular-desktop {
             margin: 3em 0;
@@ -34,6 +36,13 @@
                 left: 0;
                 transition: left .3s ease;
             }
+        }
+    }
+
+    &__box-margin {
+        margin: 1.2em 5em;
+        @include media-regular-desktop {
+            margin: 1.2em 0;
         }
     }
 
