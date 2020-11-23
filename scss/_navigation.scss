@@ -6,6 +6,11 @@
     width: 100%;
     z-index: 100;
 
+    &__shadow {
+        height: 3.8em;
+        background-color: $colorWhite;
+    }
+
     &__box {
         margin: 3em 5em;
 
