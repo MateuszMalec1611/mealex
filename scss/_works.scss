@@ -1,0 +1,58 @@
+.works {
+    position: relative;
+    
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 1.8em;
+
+        @include media-small-desktop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-small-mobile {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &-photo {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+
+            &-extra {
+                display: none;
+            }
+
+            &--active {
+                display: block;
+            }
+        }
+    }
+
+    &__button {
+        position: relative;
+        margin-top: 1.2em;
+        padding: 1em 2em;
+        font-family: Cormorant;
+        left: 50%;
+        transform: translate(-50%);
+
+        &--close {
+            padding: 0 1.7em;
+        }
+
+        .close {
+            display: none;
+        }
+      
+       &--active {
+        .open {
+            display: none;
+        }
+        .close {
+            display: block;
+        }
+       }
+    }
+}

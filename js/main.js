@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const burgerBtnclose = document.querySelector('.burger-btn__close');
     const navMobile = document.querySelector('.nav__box');
 
+
+    const allNavItems = document.querySelectorAll('.works__box-photo-extra');
+    const worksButton = document.querySelector('.works__button');
+    const worksButtonActive = document.querySelector('.works__button');
+    
+
+
     function handleClick() {
         navMobile.classList.toggle('nav__box--active');
         burgerBtnOpen.classList.toggle('burger-btn__open--close');
@@ -26,4 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     window.addEventListener('scroll', addShadow)
+
+    function activePhoto() {
+        allNavItems.forEach(item => {
+            item.classList.toggle('works__box-photo--active')
+        })
+        worksButtonActive.classList.toggle('works__button--active')
+       
+    }
+    worksButton.addEventListener('click', activePhoto);
+
+
+
 });
