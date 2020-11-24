@@ -5,9 +5,11 @@
     align-items: center;
     width: 100%;
     z-index: 100;
+    transition: background-color .3s .1s, border .3s .1s;
 
     &__box {
         margin: 3em 5em;
+        transition: margin .3s;
 
         @include media-regular-desktop {
             margin: 3em 0;
@@ -30,6 +32,18 @@
                 transition: left .3s ease;
             }
         }
+    }
+
+    &__box-margin {
+        margin: 1.2em 5em;
+        @include media-regular-desktop {
+            margin: 1.2em 0;
+        }
+    }
+
+    &__shadow {
+        background-color: $colorWhite;
+        border-bottom: 1px solid  $colorGrey;
     }
 
     &__logo {

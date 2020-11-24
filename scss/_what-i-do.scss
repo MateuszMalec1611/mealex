@@ -1,0 +1,165 @@
+.what-i-do {
+    margin-top: 7.5em;
+
+    &__container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media-small-desktop {
+            
+            &::before {
+                position: absolute;
+                content: '';
+                top: 5%;
+                left: 15%;
+                width: 200px;
+                height: 200px;
+                border: 17px solid $colorWhite;
+                z-index: 1;
+                animation: rotateLeft 100s infinite;
+            }
+            
+            &::after {
+                position: absolute;
+                content: '';
+                top: 10%;
+                right: 10%;
+                width: 300px;
+                height: 300px;
+                border: 17px solid $colorWhite;
+                z-index: 1;
+                animation: rotateRight 200s infinite;           
+            }
+
+
+        }
+
+        &-photo {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 56%;
+
+            @include media-small-desktop {
+                display: none;
+            }
+
+        }
+
+        &-bg {
+            display: none;
+
+            @include media-small-desktop {
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 86%;
+                background-color: $colorGrey;
+            }
+            @include media-mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__box {
+        margin-top: 14em;
+        position: relative;
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $colorWhite;
+        box-shadow: 0 0 40px 9px rgba(0, 0, 0, 0.15);
+        z-index: 10;
+
+        @include media-mobile {
+            margin-top: 0em;
+        }
+
+        &-cards {
+            margin-bottom: 7.2em;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 2.4em;
+
+            @include media-small-desktop {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+
+            @include media-mobile {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                row-gap: 3em;
+                margin-bottom: 3em;
+            }
+        }
+
+
+        &-card {
+            text-align: center;
+
+            &-title {
+                margin-top: .4em;
+                font-weight: 700;
+
+                @include media-mobile {
+                    margin-top: 0;
+                }
+            }
+
+            &-description {
+                display: inline-block;
+                width: 18em;
+
+                @include media-mobile {
+                    width: 14em;
+                }
+            }
+
+        }
+
+        &-card-one {
+            @include media-small-desktop {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            @include media-mobile {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+        }
+
+        &-card-two {
+            @include media-small-desktop {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            @include media-mobile {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+        }
+
+        &-card-three {
+            @include media-small-desktop {
+                grid-column: 1/-1;
+                grid-row: 2/3;
+            }
+
+            @include media-mobile {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+        }
+    }
+
+}
