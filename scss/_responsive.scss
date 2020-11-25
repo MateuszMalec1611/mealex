@@ -1,7 +1,14 @@
+$smallMobileBreakpoint: 620px;
 $mobileBreakpoint: 768px;
 $tabletBreakpoint: 992px;
 $smallDesktopBreakpoint: 1100px;
 $regularDesktopBreakpoint: 1366px;
+
+@mixin media-small-mobile {
+  @media (max-width: $smallMobileBreakpoint) {
+    @content;
+  }
+}
 
 @mixin media-mobile {
   @media (max-width: $mobileBreakpoint) {
