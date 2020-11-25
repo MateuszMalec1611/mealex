@@ -15,7 +15,8 @@
         &-input {
             padding: 0.4em 0.4em;
             width: 100%;
-            border: transparent;
+            border: none;
+            border-radius: 0;
             border-bottom: 1px solid $colorBlack;
 
 
@@ -34,10 +35,12 @@
             color: $colorExtraBlack;
             font-size: $sizeXS;
             font-family: Cormorant;
+            background-color: none;
         }
 
         &-input:focus {
             outline: none;
+            background-color: none;
         }
 
         &-textarea {
