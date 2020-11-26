@@ -10,6 +10,7 @@
 
     &__box {
         display: flex;
+        height: 100%;
         align-items: center;
         justify-content: space-between;
         @include media-mobile {
