@@ -10,11 +10,11 @@
     }
 
     &__box {
-        text-align: center;
         display: grid;
         height: 100%;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
+        text-align: center;
 
         @include media-mobile {
             grid-template-columns: 1fr;
