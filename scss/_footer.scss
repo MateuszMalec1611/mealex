@@ -1,7 +1,109 @@
 .footer {
     position: relative;
-    margin-top: 50em;
+    margin-top: 5.4em;
+    background-color: $colorBlack;
+    height: 6.4em;
 
-   
+    @include media-mobile {
+        height: 8em;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media-mobile {
+            align-items: flex-start;
+        }
+
+
+        &-text {
+            @include center;
+
+            @include media-mobile {
+                top: 6em;
+            }
+        }
+
+        &-text,
+        &-icon,
+        &-circle-up {
+            color: $colorWhite;
+        }
+
+        &-icons {
+            @include media-mobile {
+                margin-top: 2em;
+            }
+        }
+
+        &-icon {
+            position: relative;
+            padding: 1em;
+            z-index: 1;
+            transition: color .2s .1s;
+
+            @include media-mobile {
+                margin-top: 2em;
+            }
+    
+
+            &::before {               
+                @include center;
+                content: '';
+                width: 2.2em;
+                height: 2.2em;
+                border: 1px solid $colorWhite;
+                border-radius: 50%;
+                transition: transform .3s, background-color .4s;
+            }
+
+            &:hover::before {
+                background-color: $colorWhite;
+                transform: translate(-50%, -50%) scale(1.2);
+                z-index: -1;
+            }
+
+            &:hover {
+                color: $colorBlack;
+            }
+
+
+        }
+
+        &-icon:nth-child(1) {
+            margin-left: 6.4em;
+
+            @include media-small-desktop {
+                margin-left: 1.4em;
+            }
+        }
+
+
+
+        &-circle-up {
+            margin-right: 1em;
+            padding: .2em;
+            font-size: 2.8rem;
+            transition: transform .3s;
+
+            @include media-mobile {
+                margin-top: .38em;
+                margin-right: .5em;
+                font-size: 3.8rem;
+            }
+
+            &:hover {
+                transform: scale(1.4);
+                @include media-mobile {
+                    transform: scale(1);
+                }
+            }
+        }
+
+
+    }
+
+
 
 }
