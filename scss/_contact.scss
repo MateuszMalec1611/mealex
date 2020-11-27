@@ -33,11 +33,10 @@
                 font-family: Cormorant;
                 background-color: none;
             }
-        }
-
-        &-input:focus {
-            outline: none;
-            background-color: none;
+            &:focus {
+                outline: none;
+                background-color: none;
+            }
         }
 
         &-textarea {

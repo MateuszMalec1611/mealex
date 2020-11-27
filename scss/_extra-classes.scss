@@ -15,13 +15,11 @@
     content: '';
 }
 
-
 .section-header {
     @include center-column-items;
     margin-top: 7em;
     margin-bottom: 3em;
     text-align: center;
-
 
     &__title {
         position: relative;
@@ -47,7 +45,6 @@
             left: 55%;
             width: .1em;
         }
-
     }
 
     &__underline-two {
