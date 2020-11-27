@@ -16,6 +16,7 @@ body {
     font-family: 'Cormorant', serif;
     font-size: 1.6rem;
     color: $colorBlack;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -37,6 +38,7 @@ h3 {
 button {
     font-size: 1.6rem;
     background-color: transparent;
+    font-family: Cormorant;
     border: 1px solid $colorBlack;
     text-transform: uppercase;
     cursor: pointer;

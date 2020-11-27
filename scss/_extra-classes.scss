@@ -3,8 +3,16 @@
     width: 100%;
     max-width: 1220px;
 }
+
 .section-padding {
     padding: 0 2em;
+}
+
+.scroll-fix::before {
+    display: block;
+    margin-top: -3.5em;
+    height: 3.5em;
+    content: '';
 }
 
 

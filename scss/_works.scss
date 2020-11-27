@@ -34,9 +34,9 @@
         position: relative;
         margin-top: 1.2em;
         padding: 1em 2em;
-        font-family: Cormorant;
         left: 50%;
         transform: translate(-50%);
+        box-shadow: -1px 10px 24px rgba(0, 0, 0, 0.18);
 
         &--close {
             padding: 0 1.7em;

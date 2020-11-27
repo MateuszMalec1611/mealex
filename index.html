@@ -29,7 +29,7 @@
                 <li class="nav__links-item"><a class="nav__links-style" href="#about">about</a></li>
                 <li class="nav__links-item"><a class="nav__links-style" href="#service">service</a></li>
                 <li class="nav__links-item"><a class="nav__links-style" href="#portfolio">portfolio</a></li>
-                <li class="nav__links-item"><a class="nav__links-style" href="#">contact</a></li>
+                <li class="nav__links-item"><a class="nav__links-style" href="#contact">contact</a></li>
             </ul>
         </div>
     </nav>
@@ -50,7 +50,7 @@
     </header>
 
     <main>
-        <section id="about" class="about section-padding">
+        <section id="about" class="about section-padding scroll-fix">
             <div class="section-header">
                 <h2 class="section-header__title">aboute</h2>
                 <div class="section-header__underline-one"></div>
@@ -109,7 +109,7 @@
             </div>
         </section>
 
-        <section class="what-i-do" id="service">
+        <section class="what-i-do scroll-fix" id="service">
             <div class="what-i-do__container">
 
                 <img class="what-i-do__container-photo" src="img/whatIdo.jpg" alt="
@@ -157,7 +157,7 @@
             </div>
         </section>
 
-        <section class="works section-padding" id="portfolio">
+        <section class="works section-padding scroll-fix" id="portfolio">
 
             <div class="wrapper">
                 <div class="section-header">
@@ -188,16 +188,59 @@
                     <p class="open">load more</p>
                     <p class="close works__button--close">hide</p>
                 </button>
-                
+
+            </div>
+        </section>
+
+        <section class="statistics">
+            <div class="statistics__img">
+                <div class="statistics__img-bg"></div>
+
+                <div class="statistics__box">
+
+                    <div class="statistics__text">
+                        <p class="statistics__text-numbers">10</p>
+                        <p class="statistics__text-describe">Years Experience</p>
+                    </div>
+
+                    <div class="statistics__text">
+                        <p class="statistics__text-numbers">120</p>
+                        <p class="statistics__text-describe">Projects Delivered</p>
+                    </div>
+
+                    <div class="statistics__text">
+                        <p class="statistics__text-numbers">10</p>
+                        <p class="statistics__text-describe">Seconds on this site!</p>
+                        <p class="statistics__text-describe">What are you waiting for?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-padding scroll-fix" id="contact">
+            <div class="section-header">
+                <h2 class="section-header__title">contact</h2>
+                <div class="section-header__underline-one"></div>
+                <div class="section-header__underline-two"></div>
+            </div>
+
+            <div class="wrapper">
+
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <input class="contact__form-input contact__form-input-one" type="text" id="name" placeholder="Name">
+                        <input class="contact__form-input contact__form-input-two" type="email" id="email" placeholder="E-mail">
+                    </div>
+
+                    <textarea class="contact__form-input contact__form-textarea" id="text" name="text" placeholder="Message"></textarea>
+
+                    <button class="contact__form-button" type="sumbit" name="sumbit">hire me <span><i class="far fa-paper-plane"></i></button>
+                </form>
 
             </div>
 
-
-
-
-
+            </div>
         </section>
-
     </main>
 
 
