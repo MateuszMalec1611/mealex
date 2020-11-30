@@ -1,0 +1,118 @@
+.footer {
+    position: relative;
+    margin-top: 5.4em;
+    background-color: $colorBlack;
+    height: 6.4em;
+
+    @include media-mobile {
+        height: 11em;
+
+    }
+
+    &__box {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        text-align: center;
+
+        @include media-mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+
+        }
+
+        &-text,
+        &-icon,
+        &-circle-up {
+            color: $colorWhite;
+        }
+
+        &-icons {
+            margin-left: 6em;
+            grid-column: 1/2;
+            grid-row: 1;
+            align-self: center;
+            justify-self: start;
+
+            @include media-small-desktop {
+                margin-left: 2.2em;
+            }
+
+            @include media-mobile {
+                margin-right: 1.8em;
+                grid-column: 1;
+                grid-row: 2/3;
+                justify-self: center;
+            }
+        }
+
+
+        &-icon {
+            position: relative;
+            padding: 1em;
+            z-index: 1;
+            transition: color .2s .1s;
+
+            &::before {
+                @include center;
+                content: '';
+                width: 2.2em;
+                height: 2.2em;
+                border: 1px solid $colorWhite;
+                border-radius: 50%;
+                transition: transform .3s, background-color .4s;
+            }
+
+            &:hover::before {
+                background-color: $colorWhite;
+                transform: translate(-50%, -50%) scale(1.2);
+                z-index: -1;
+            }
+
+            &:hover {
+                color: $colorBlack;
+            }
+        }
+
+        &-text {
+            grid-column: 2/3;
+            grid-row: 1;
+            align-self: center;
+
+            @include media-mobile {
+                grid-column: 1;
+                grid-row: 3/4;
+            }
+        }
+
+        &-circle-up {
+            padding: .2em;
+            margin-right: 1.1em;
+            grid-column: 3/4;
+            grid-row: 1;
+            justify-self: end;
+            align-self: center;
+            font-size: 2.8rem;
+            transition: transform .3s;
+
+            @include media-mobile {
+                margin-left: 1.1em;
+                grid-column: 1;
+                grid-row: 1/2;
+                justify-self: center;
+            }
+
+
+
+            &:hover {
+                transform: scale(1.4);
+            }
+        }
+
+
+    }
+
+
+
+}
