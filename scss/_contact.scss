@@ -19,7 +19,6 @@
             border-radius: 0;
             border-bottom: 1px solid $colorBlack;
 
-
             &-one {
                 margin-right: 1.1em;
             }
@@ -27,15 +26,13 @@
             &-two {
                 margin-left: 1.1em;
             }
-
-        }
-
-        &-input::placeholder {
-            font-size: $sizeXS;
-            color: $colorExtraBlack;
-            font-size: $sizeXS;
-            font-family: Cormorant;
-            background-color: none;
+            &::placeholder {
+                font-size: $sizeXS;
+                color: $colorExtraBlack;
+                font-size: $sizeXS;
+                font-family: Cormorant;
+                background-color: none;
+            }
         }
 
         &-input:focus {
